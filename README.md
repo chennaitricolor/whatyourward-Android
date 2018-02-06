@@ -36,6 +36,12 @@ Localify - For loading offline data from the text content.
 
 **Android Studio:**
 
+- Choose **Project mode** from the side panel like below
+
+<a href="https://imgur.com/HOfI3Lu"><img src="https://i.imgur.com/HOfI3Lu.png" title="source: imgur.com" /></a>
+
+- Select the Project -> Right Click -> New -> File
+
 <a href="https://imgur.com/dEZ1e0G"><img src="https://i.imgur.com/dEZ1e0G.png" title="source: imgur.com" /></a>
 
 <a href="https://imgur.com/v8HAiqF"><img src="https://i.imgur.com/v8HAiqF.png" title="source: imgur.com" /></a>
