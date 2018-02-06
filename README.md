@@ -24,7 +24,7 @@ Glide - Image loading
 Localify - For loading offline data from the text content.
 
 
-How to setup the project?
+## How to setup the project?
 
 - Download the project or clone this repository.
 
