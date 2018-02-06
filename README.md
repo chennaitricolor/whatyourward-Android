@@ -24,4 +24,11 @@ Glide - Image loading
 Localify - For loading offline data from the text content.
 
 
+How to setup the project?
+
+- Download the project or clone this repository.
+
+- Open Android Studio and choose Open an existing **Android Studio Project** option
+
+- Import the project and sync the
 
