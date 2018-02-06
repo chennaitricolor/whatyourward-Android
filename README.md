@@ -40,17 +40,17 @@ Localify - For loading offline data from the text content.
 
 <a href="https://imgur.com/HOfI3Lu"><img src="https://i.imgur.com/HOfI3Lu.png" title="source: imgur.com" /></a>
 
-- Select the Project -> Right Click -> New -> File
+- Select the **Project -> Right Click -> New -> File**
 
 <a href="https://imgur.com/dEZ1e0G"><img src="https://i.imgur.com/dEZ1e0G.png" title="source: imgur.com" /></a>
 
 <a href="https://imgur.com/v8HAiqF"><img src="https://i.imgur.com/v8HAiqF.png" title="source: imgur.com" /></a>
 
-- Paste your google map key in secrets.properties like below
+- Paste your google map key in **secrets.properties** like below
 
 <a href="https://imgur.com/J0TIrpT"><img src="https://i.imgur.com/J0TIrpT.png" title="source: imgur.com" /></a>
 
-- Now rebuild the project (i.e Build -> Rebuild) 
+- Now rebuild the project (i.e **Build -> Rebuild**) 
 
 <a href="https://imgur.com/cJIKxTF"><img src="https://i.imgur.com/cJIKxTF.png" title="source: imgur.com" /></a>
 
