@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">WhatYourWard</string>
+
+    <string name="dialog_action_ok">OK</string>
+    <!--<string name="dialog_action_cancel">Cancel</string>-->
+    <string name="dialog_error_title">Sorry</string>
+
+    <!-- Detail Activity -->
+    <!--<string name="text_pokemon_id">Id: %s</string>-->
+    <!--<string name="text_pokemon_name">Name: %s</string>-->
+    <!--<string name="text_pokemon_experience">Experience: %s</string>-->
+
+    <!-- Error View -->
+    <string name="error_title">Oops</string>
+    <string name="error_message">There was a problem loading the pokemon, please try again!</string>
+    <string name="error_reload">Reload</string>
+    <string name="title_activity_maps_sample">Map</string>
+    <string name="error_something_bad_happened">Something bad happened. Please try again.</string>
+    <string name="title_activity_recycler_view">RecyclerViewActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_cart_list">CartListActivity</string>
+
+
+    <string name="fonts_mons_regular">fonts/Montserrat-Regular.ttf</string>
+    <string name="fonts_mons_medium">fonts/Montserrat-Medium.ttf</string>
+
+    <string name="fonts_dosis_medium">fonts/Dosis-Medium.ttf</string>
+    <string name="fonts_dosis_regular">fonts/Dosis-Regular.ttf</string>
+    <string name="fonts_dosis_semi_bold">fonts/Dosis-SemiBold.ttf</string>
+
+
+    <string name="map_title_ward">WHAT YOUR WARD?</string>
+    <string name="text_ward_name_hint">WARD:\u0020</string>
+    <string name="text_ward_address_hint">WARD OFFICE ADDRESS \n</string>
+    <string name="text_ward_contact_hint">CONTACT:\u0020</string>
+    <string name="text_ward_email_hint">EMAIL:\u0020</string>
+
+
+    <string name="text_zone_name_hint">ZONE:\u0020</string>
+    <string name="text_zone_address_hint">ZONAL OFFICE ADDRESS \n</string>
+    <string name="text_zone_contact_hint">CONTACT:\u0020</string>
+    <string name="info_no_contact">No contacts found</string>
+    <string name="info_no_email">No email found</string>
+    <string name="permission_error_location">Sorry! Map cannot be loaded. Please enable the location permission</string>
+    <string name="error_no_ward_details">No ward details found for this area</string>
+
+    <string name="error_no_internet">Please check your internet connection and come back again.</string>
+
+    <string name="permission_success_gps">GPS enabled</string>
+    <string name="permission_error_gps">Please turn on the GPS to serve you better!</string>
+    <string name="permission_error_airplane">Please turn off the Airplane mode to use the app</string>
+    <string name="join_ward_group">JOIN WARD GROUP</string>
+    <string name="loading_location">GETTING YOUR LOCATION</string>
+    <string name="btn_next">Next</string>
+    <string name="map_confirm_location">CONFIRM YOUR LOCATION, ADJUST IF REQUIRED</string>
+
+    <string name="dialog_location_message">There seems to be something wrong while fetching location</string>
+    <string name="dialog_location_positve_btn">TRY AGAIN</string>
+
+    <string name="dialog_location_negative_btn">CLOSE APP</string>
+
+
+    <string name="dialog_location_neutral_btn">TURN ON GPS</string>
+
+</resources>
