@@ -28,7 +28,24 @@ How to setup the project?
 
 - Download the project or clone this repository.
 
-- Open Android Studio and choose Open an existing **Android Studio Project** option
+- Open Android Studio and choose **Open an existing Android Studio Project** option
 
-- Import the project and sync the
+- Import the project and wait for the gradle sync to complete.
+
+- To build this project, Create secrets.properties file in the main folder (i.e below local.properties).
+
+**Android Studio:**
+
+<a href="https://imgur.com/dEZ1e0G"><img src="https://i.imgur.com/dEZ1e0G.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/v8HAiqF"><img src="https://i.imgur.com/v8HAiqF.png" title="source: imgur.com" /></a>
+
+- Paste your google map key in secrets.properties like below
+
+<a href="https://imgur.com/J0TIrpT"><img src="https://i.imgur.com/J0TIrpT.png" title="source: imgur.com" /></a>
+
+- Now rebuild the project (i.e Build -> Rebuild) 
+
+<a href="https://imgur.com/cJIKxTF"><img src="https://i.imgur.com/cJIKxTF.png" title="source: imgur.com" /></a>
+
 
