@@ -55,3 +55,4 @@ Localify - For loading offline data from the text content.
 <a href="https://imgur.com/cJIKxTF"><img src="https://i.imgur.com/cJIKxTF.png" title="source: imgur.com" /></a>
 
 
+Yeah! That's it, your project setup is done.
