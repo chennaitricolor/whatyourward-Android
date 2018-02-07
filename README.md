@@ -32,7 +32,7 @@ Localify - For loading offline data from the text content.
 
 - Import the project and wait for the gradle sync to complete.
 
-- To build this project, Create secrets.properties file in the main folder (i.e below local.properties).
+- To build this project, Create secrets.properties file in the main folder (i.e below local.properties). Please find the screenshot attached for the steps below.
 
 **Android Studio:**
 
@@ -56,3 +56,5 @@ Localify - For loading offline data from the text content.
 
 
 Yeah! That's it, your project setup is done.
+
+> **Note:** The project will not compile and build without **secrets.dependencies** file. For security concerns, this file is not committed to the repository
