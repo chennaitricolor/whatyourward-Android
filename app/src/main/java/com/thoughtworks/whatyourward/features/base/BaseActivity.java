@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import java.util.concurrent.atomic.AtomicLong;
 
 import butterknife.ButterKnife;
+
+import com.thoughtworks.whatyourward.BuildConfig;
 import com.thoughtworks.whatyourward.WhatYourWardApplication;
 import com.thoughtworks.whatyourward.injection.component.ActivityComponent;
 import com.thoughtworks.whatyourward.injection.component.ConfigPersistentComponent;
@@ -39,6 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(getLayout());
         ButterKnife.bind(this);
+
 
         // Create the ActivityComponent and reuses cached ConfigPersistentComponent if this is
         // being called after a configuration change.

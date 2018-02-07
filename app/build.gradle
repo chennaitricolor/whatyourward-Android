@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 
 
-//def GOOGLE_MAP_API_KEY = '"' + GoogleMapApiKey + '"' ?: "Please add your google api key in gradle.properties"
 def getApiKey(){
     def Properties props = new Properties()
     props.load(new FileInputStream(new File('secrets.properties')))
@@ -11,6 +10,7 @@ def getApiKey(){
 android {
     compileSdkVersion 27
     buildToolsVersion '27.0.0'
+
 
     dexOptions {
         maxProcessCount 4
@@ -26,6 +26,9 @@ android {
         versionCode 1000
         versionName '0.1.0'
 
+        manifestPlaceholders = [ GOOGLE_MAPS_API_KEY:getApiKey()]
+
+
     }
     buildTypes {
         release {
@@ -33,9 +36,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
-        applicationVariants.all { variant ->
-            variant.buildConfigField "String", "GOOGLE_MAPS_API_KEY", "\""+getApiKey()+"\""
-        }
+        /*
+          Uncomment this to use GOOGLE_MAPS_API_KEY in java class
+         */
+//        applicationVariants.all { variant ->
+//
+//            variant.buildConfigField "String", "GOOGLE_MAPS_API_KEY", "\""+getApiKey()+"\""
+//        }
     }
 
 
