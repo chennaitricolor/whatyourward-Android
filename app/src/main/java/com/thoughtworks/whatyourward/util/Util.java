@@ -16,7 +16,7 @@ public class Util {
 
 
 
-    public  void showToastShort(Context context,String message){
+    public static void showToastShort(Context context,String message){
 
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }

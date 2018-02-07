@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -293,8 +294,12 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
 
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
+
+        BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from((View) view.getParent());
+
         dialog.show();
 
+        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
     }
 
 
@@ -404,6 +409,8 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
 
     @Override
     public void showWardDetailsNotFoundError() {
+
+
         Toast.makeText(this, R.string.error_no_ward_details, Toast.LENGTH_SHORT).show();
     }
 

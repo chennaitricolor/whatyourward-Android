@@ -5,7 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:ignore="MissingPrefix">
+    tools:ignore="MissingPrefix"
+    android:scrollbars="vertical"
+    android:scrollIndicators="start"
+    android:scrollbarFadeDuration="10000"
+    android:scrollbarTrackVertical="@color/grey"
+    android:scrollbarThumbVertical="@android:color/holo_purple"
+    android:scrollbarSize="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
