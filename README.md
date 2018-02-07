@@ -98,5 +98,8 @@ Type ``gradlew installDebug`` and press **Enter**
 
 Type ``./gradlew installDebug`` and press **Enter**
 
+> **Note:** Emulator or Android device needs to be connected with USB debugging option enabled.
+
+
 
 
