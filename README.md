@@ -24,7 +24,7 @@ Glide - Image loading
 Localify - For loading offline data from the text content.
 
 
-How to setup the project?
+## How to setup the project?
 
 - Download the project or clone this repository.
 
@@ -32,22 +32,59 @@ How to setup the project?
 
 - Import the project and wait for the gradle sync to complete.
 
-- To build this project, Create secrets.properties file in the main folder (i.e below local.properties).
+
+- To build this project, Create secrets.properties file in the main folder (i.e below local.properties). Please find the screenshot attached for the steps below.
 
 **Android Studio:**
 
-<a href="https://imgur.com/vHvJvQ9"><img src="https://i.imgur.com/vHvJvQ9.png" title="source: imgur.com" /></a>
+- Choose **Project mode** from the side panel
 
-<a href="https://imgur.com/DzPOzi1"><img src="https://i.imgur.com/DzPOzi1.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/HOfI3Lu"><img src="https://i.imgur.com/HOfI3Lu.png" title="source: imgur.com" /></a>
+
+- Select the **Project -> Right Click -> New -> File**
+
+<a href="https://imgur.com/dEZ1e0G"><img src="https://i.imgur.com/dEZ1e0G.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/v8HAiqF"><img src="https://i.imgur.com/v8HAiqF.png" title="source: imgur.com" /></a>
+
+- Paste your google map key in **secrets.properties**
+
+<a href="https://imgur.com/J0TIrpT"><img src="https://i.imgur.com/J0TIrpT.png" title="source: imgur.com" /></a>
+
+- Now rebuild the project (i.e **Build -> Rebuild**)
+
+<a href="https://imgur.com/cJIKxTF"><img src="https://i.imgur.com/cJIKxTF.png" title="source: imgur.com" /></a>
 
 
-- Paste your google map key in secrets.properties like below
+Yeah! That's it, your project setup is done.
 
-<a href="https://imgur.com/WnBBV19"><img src="https://i.imgur.com/WnBBV19.png" title="source: imgur.com" /></a>
+> **Note:** The project will not compile and build without **secrets.dependencies** file. For security concerns, this file is not committed to the repository
 
-- Now rebuild the project (i.e Build -> Rebuild) 
+## How to build the debug apk in command line?
 
-<a href="https://imgur.com/smzW4IE"><img src="https://i.imgur.com/smzW4IE.png" title="source: imgur.com" /></a>
+- **cd** to the current project directory
+
+**On Windows:**
+
+Type ``gradlew assembleDebug`` and press **Enter**
+
+
+**On Mac or Linux:**
+
+Type ``./gradlew assembleDebug`` and press **Enter**
+
+> **Note:** The apk will be inside the path ``WhatYourWard/app/build/outputs/apk/debug/``
+
+## How to build the APK and install it on a running emulator or connected device?
+
+**On Windows:**
+
+Type ``gradlew installDebug`` and press **Enter**
+
+
+**On Mac or Linux:**
+
+Type ``./gradlew installDebug`` and press **Enter**
 
 
 
