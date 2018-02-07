@@ -1,4 +1,4 @@
-# what-your-ward
+# What Your Ward
 Application to find the ward details of your location
 
 ## Core Architecture
