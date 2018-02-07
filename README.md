@@ -62,6 +62,7 @@ Yeah! That's it, your project setup is done.
 ## How to build the debug apk in command line?
 
 - **cd** to the current project directory
+
 **On windows:**
 
 Type ``gradlew assembleDebug`` and press **Enter**
