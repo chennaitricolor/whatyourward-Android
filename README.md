@@ -85,7 +85,7 @@ Type ``./gradlew assembleDebug`` and press **Enter**
 
 > **Note:** The apk will be inside the path ``WhatYourWard/app/build/outputs/apk/debug/``
 
-## How to build the APK and install it on a running emulator or connected device?
+## How to build the APK and install it on a running emulator or connected device in command line?
 
 **cd** to the current project directory
 
