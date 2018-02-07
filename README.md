@@ -33,9 +33,9 @@ Localify - For loading offline data from the text content.
 - Import the project and wait for the gradle sync to complete.
 
 
-- To build this project, Create secrets.properties file in the main folder (i.e below local.properties). Please find the screenshot attached for the steps below.
+- To build this project, Create secrets.properties file in the main folder. Please find the screenshot attached for the steps below.
 
-**Android Studio:**
+**Android Studio:** (If project root folder is shown)
 
 - Choose **Project mode** from the side panel
 
@@ -47,9 +47,19 @@ Localify - For loading offline data from the text content.
 
 <a href="https://imgur.com/v8HAiqF"><img src="https://i.imgur.com/v8HAiqF.png" title="source: imgur.com" /></a>
 
-- Paste your google map key in **secrets.properties**
+
+**Finder Menu:** (Incase project is not synced in Android Studio)
+
+- Open project in the finder.
+
+- Create **secrets.properties** in the main folder (i.e below local.properties, app, build, gradle, README.md,etc.
+
+<a href="https://imgur.com/zQh7ffW"><img src="https://i.imgur.com/zQh7ffW.png" title="source: imgur.com" /></a>
+
+- Open **secrets.properties** and paste your google map key
 
 <a href="https://imgur.com/J0TIrpT"><img src="https://i.imgur.com/J0TIrpT.png" title="source: imgur.com" /></a>
+
 
 - Now rebuild the project (i.e **Build -> Rebuild**)
 
