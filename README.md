@@ -63,15 +63,28 @@ Yeah! That's it, your project setup is done.
 
 - **cd** to the current project directory
 
-**On windows:**
+**On Windows:**
 
 Type ``gradlew assembleDebug`` and press **Enter**
 
 
 **On Mac or Linux:**
 
-Type ``gradlew assembleDebug`` and press **Enter**
+Type ``./gradlew assembleDebug`` and press **Enter**
 
 > **Note:** The apk will be inside the path ``WhatYourWard/app/build/outputs/apk/debug/``
+
+## How to build the APK and install it on a running emulator or connected device?
+
+**On Windows:**
+
+Type ``gradlew installDebug`` and press **Enter**
+
+
+**On Mac or Linux:**
+
+Type ``./gradlew installDebug`` and press **Enter**
+
+
 
 
