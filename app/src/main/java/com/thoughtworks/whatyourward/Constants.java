@@ -27,6 +27,10 @@ public class Constants {
 
        int MAP_ZOOM = 13;
 
+        double LATITUDE = 13.0827;
+
+        double LONGITUDE = 80.2707;
+
     }
 
     public interface REQUEST_CODES{

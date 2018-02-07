@@ -50,6 +50,7 @@ import com.thoughtworks.whatyourward.util.KmlUtil;
 import com.thoughtworks.whatyourward.util.NetworkUtil;
 import com.thoughtworks.whatyourward.util.ParseUtil;
 import com.thoughtworks.whatyourward.util.StringUtil;
+import com.thoughtworks.whatyourward.util.Util;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -144,9 +145,9 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
     }
 
 
-    private void configureMapAndAddLayer(Location location) {
+    private void configureMapAndAddLayer(double latitude, double longitude) {
 
-        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), Constants.DEFAULT.MAP_ZOOM));
+        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), Constants.DEFAULT.MAP_ZOOM));
         mGoogleMap.getUiSettings().setZoomControlsEnabled(false);
 
         mGoogleMap.setMyLocationEnabled(true);
@@ -340,59 +341,65 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
 
             Timber.i("Lat lng inside onLocationUpdated");
 
-            configureMapAndAddLayer(location);
+            configureMapAndAddLayer(location.getLatitude(), location.getLongitude());
 
             Timber.i("getMapAsync() called in onLocationUpdated");
 
         } else {
-            homePresenter.showLocationPermissionErrorDialog();
+
+
+            Toast.makeText(HomeActivity.this, R.string.error_default_location_message,Toast.LENGTH_SHORT).show();
+
+            configureMapAndAddLayer(Constants.DEFAULT.LATITUDE, Constants.DEFAULT.LONGITUDE);
+
+//            homePresenter.showLocationPermissionErrorDialog();
         }
 
     }
 
-    @Override
-    public void showLocationPermissionErrorDialog() {
-
-
-        Timber.i("Location object is null.");
-
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(HomeActivity.this);
-
-
-        alertDialog
-                .setMessage(R.string.dialog_location_message)
-                .setCancelable(false)
-                .setPositiveButton(R.string.dialog_location_positve_btn, (dialogBox, id) -> {
-
-                    Timber.i("Trying to reconnect");
-
-                    mGoogleApiClient.connect();
-                    dialogBox.dismiss();
-
-                })
-
-                .setNegativeButton(R.string.dialog_location_negative_btn,
-                        (dialogBox, id) -> {
-
-                            homePresenter.stopLoadingAnimation();
-
-                            homePresenter.closeScreen();
-                            dialogBox.dismiss();
-                        })
-
-
-                .setNeutralButton(R.string.dialog_location_neutral_btn,
-                        (dialogBox, id) -> {
-
-                            homePresenter.showGpsPermissionDialog();
-
-                            dialogBox.dismiss();
-                        });
-
-        AlertDialog alertDialogAndroid = alertDialog.create();
-        alertDialogAndroid.show();
-
-    }
+//    @Override
+//    public void showLocationPermissionErrorDialog() {
+//
+//
+//        Timber.i("Location object is null.");
+//
+//        AlertDialog.Builder alertDialog = new AlertDialog.Builder(HomeActivity.this);
+//
+//
+//        alertDialog
+//                .setMessage(R.string.dialog_location_message)
+//                .setCancelable(false)
+//                .setPositiveButton(R.string.dialog_location_positve_btn, (dialogBox, id) -> {
+//
+//                    Timber.i("Trying to reconnect");
+//
+//                    mGoogleApiClient.connect();
+//                    dialogBox.dismiss();
+//
+//                })
+//
+//                .setNegativeButton(R.string.dialog_location_negative_btn,
+//                        (dialogBox, id) -> {
+//
+//                            homePresenter.stopLoadingAnimation();
+//
+//                            homePresenter.closeScreen();
+//                            dialogBox.dismiss();
+//                        })
+//
+//
+//                .setNeutralButton(R.string.dialog_location_neutral_btn,
+//                        (dialogBox, id) -> {
+//
+//                            homePresenter.showGpsPermissionDialog();
+//
+//                            dialogBox.dismiss();
+//                        });
+//
+//        AlertDialog alertDialogAndroid = alertDialog.create();
+//        alertDialogAndroid.show();
+//
+//    }
 
 
     @Override

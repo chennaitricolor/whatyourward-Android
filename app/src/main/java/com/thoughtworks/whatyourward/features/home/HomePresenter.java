@@ -115,10 +115,10 @@ public class HomePresenter extends BasePresenter<HomeView> {
 
     }
 
-    public void showLocationPermissionErrorDialog(){
-
-        getView().showLocationPermissionErrorDialog();
-    }
+//    public void showLocationPermissionErrorDialog(){
+//
+//        getView().showLocationPermissionErrorDialog();
+//    }
 
     public void showGpsPermissionDialog(){
 

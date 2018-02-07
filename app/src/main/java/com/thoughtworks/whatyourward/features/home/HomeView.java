@@ -21,7 +21,7 @@ public interface HomeView extends MvpView {
 
     void getCurrentLocation();
 
-    void showLocationPermissionErrorDialog();
+//    void showLocationPermissionErrorDialog();
 
     void showWardDetailsNotFoundError();
 
