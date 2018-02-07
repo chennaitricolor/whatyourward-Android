@@ -33,7 +33,7 @@ Localify - For loading offline data from the text content.
 - Import the project and wait for the gradle sync to complete.
 
 
-- To build this project, Create secrets.properties file in the main folder. Please find the screenshot attached for the steps below.
+- To build this project, Create **secrets.properties** file in the main folder. Please find the screenshot attached for the steps below.
 
 **Android Studio:** (If project root folder is shown)
 
@@ -72,7 +72,7 @@ Yeah! That's it, your project setup is done.
 
 ## How to build the debug apk in command line?
 
-- **cd** to the current project directory
+**cd** to the current project directory
 
 **On Windows:**
 
@@ -86,6 +86,8 @@ Type ``./gradlew assembleDebug`` and press **Enter**
 > **Note:** The apk will be inside the path ``WhatYourWard/app/build/outputs/apk/debug/``
 
 ## How to build the APK and install it on a running emulator or connected device?
+
+**cd** to the current project directory
 
 **On Windows:**
 
