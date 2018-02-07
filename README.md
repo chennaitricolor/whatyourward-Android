@@ -58,3 +58,19 @@ Localify - For loading offline data from the text content.
 Yeah! That's it, your project setup is done.
 
 > **Note:** The project will not compile and build without **secrets.dependencies** file. For security concerns, this file is not committed to the repository
+
+## How to build the debug apk in command line?
+
+- **cd** to the current project directory
+**On windows:**
+
+Type ``gradlew assembleDebug`` and press **Enter**
+
+
+**On Mac or Linux:**
+
+Type ``gradlew assembleDebug`` and press **Enter**
+
+> **Note:** The apk will be inside the path ``WhatYourWard/app/build/outputs/apk/debug/``
+
+
