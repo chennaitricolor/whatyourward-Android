@@ -1,7 +1,5 @@
 package com.thoughtworks.whatyourward.features.home;
 
-import android.Manifest;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.graphics.drawable.AnimationDrawable;
@@ -13,7 +11,6 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -39,8 +36,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.google.maps.android.data.kml.KmlPlacemark;
-import com.tbruyelle.rxpermissions2.RxPermissions;
-import com.thoughtworks.whatyourward.BuildConfig;
 import com.thoughtworks.whatyourward.Constants;
 import com.thoughtworks.whatyourward.R;
 import com.thoughtworks.whatyourward.data.model.ward.Ward;
@@ -52,7 +47,6 @@ import com.thoughtworks.whatyourward.util.KmlUtil;
 import com.thoughtworks.whatyourward.util.NetworkUtil;
 import com.thoughtworks.whatyourward.util.ParseUtil;
 import com.thoughtworks.whatyourward.util.StringUtil;
-import com.thoughtworks.whatyourward.util.Util;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -256,7 +250,7 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
 
         ZoneInfo zoneInfo = ward.getZoneInfo();
 
-        View view = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
+        View view = getLayoutInflater().inflate(R.layout.bottom_sheet_ward_details, null);
 
         TextView txtZoneName = view.findViewById(R.id.txt_zone_name);
         TextView txtZoneAddress = view.findViewById(R.id.txt_zone_address);
