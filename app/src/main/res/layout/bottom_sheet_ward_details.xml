@@ -185,7 +185,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                tools:text="@string/join_ward_group"
+                android:text="@string/join_ward_group"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </LinearLayout>
