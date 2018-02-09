@@ -40,6 +40,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.data.kml.KmlLayer;
 import com.google.maps.android.data.kml.KmlPlacemark;
 import com.tbruyelle.rxpermissions2.RxPermissions;
+import com.thoughtworks.whatyourward.BuildConfig;
 import com.thoughtworks.whatyourward.Constants;
 import com.thoughtworks.whatyourward.R;
 import com.thoughtworks.whatyourward.data.model.ward.Ward;
@@ -218,7 +219,9 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
                 = (AnimationDrawable) imgLoading.getDrawable();
 
         imgLoading.post(
-                () -> loadingAnimationDrawable.start());
+                () -> loadingAnimationDrawable.start()
+
+        );
 
 
     }
@@ -411,6 +414,7 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
     public void showWardDetailsNotFoundError() {
 
 
+
         Toast.makeText(this, R.string.error_no_ward_details, Toast.LENGTH_SHORT).show();
     }
 
@@ -589,6 +593,7 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
     @Override
     protected void onStart() {
         super.onStart();
+
         if (mGoogleApiClient != null) {
             mGoogleApiClient.connect();
         }
