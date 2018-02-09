@@ -31,7 +31,7 @@
                 fontPath="@string/fonts_dosis_semi_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ZONE: ADYAR"
+                tools:text="ZONE: ADYAR"
                 android:textColor="@color/black"
                 android:textSize="22sp" />
 
@@ -61,7 +61,7 @@
                     android:background="@android:color/holo_purple"
                     android:gravity="center"
                     android:lineSpacingExtra="5dp"
-                    android:text="8"
+                    tools:text="8"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     fontPath="@string/fonts_dosis_semi_bold"
@@ -78,9 +78,9 @@
                 android:drawablePadding="10dp"
                 android:gravity="center_vertical"
                 android:lineSpacingExtra="5dp"
-                android:text="9445678765"
+                tools:text="9445678765"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
         </LinearLayout>
 
 
@@ -97,7 +97,7 @@
                 fontPath="@string/fonts_dosis_semi_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="WARD: THIRUVANMIYUR"
+                tools:text="WARD: THIRUVANMIYUR"
                 android:textColor="@color/black"
                 android:textSize="22sp" />
 
@@ -127,7 +127,7 @@
                     android:background="@android:color/holo_purple"
                     android:gravity="center"
                     android:lineSpacingExtra="5dp"
-                    android:text="182"
+                    tools:text="182"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -144,9 +144,9 @@
                 android:drawablePadding="10dp"
                 android:gravity="center_vertical"
                 android:lineSpacingExtra="5dp"
-                android:text="ward182@chennaicorporation.gov.in"
+                tools:text="ward182@chennaicorporation.gov.in"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
             <TextView
                 android:id="@+id/txt_ward_mobile"
@@ -157,9 +157,9 @@
                 android:drawablePadding="10dp"
                 android:gravity="center_vertical"
                 android:lineSpacingExtra="5dp"
-                android:text="9445678765"
+                tools:text="9445678765"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
         </LinearLayout>
 
 
@@ -185,7 +185,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/join_ward_group"
+                tools:text="@string/join_ward_group"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </LinearLayout>
