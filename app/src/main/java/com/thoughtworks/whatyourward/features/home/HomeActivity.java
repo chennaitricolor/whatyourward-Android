@@ -144,7 +144,7 @@ public class HomeActivity extends BaseActivity implements HomeView, OnMapReadyCa
     private void configureMapAndAddLayer(double latitude, double longitude) {
 
         mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), Constants.DEFAULT.MAP_ZOOM));
-        mGoogleMap.getUiSettings().setZoomControlsEnabled(false);
+        mGoogleMap.getUiSettings().setZoomControlsEnabled(true);
 
         mGoogleMap.setMyLocationEnabled(true);
 
