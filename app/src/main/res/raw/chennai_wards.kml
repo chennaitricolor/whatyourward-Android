@@ -8415,7 +8415,7 @@
     </Placemark>
     <Placemark>
         <name>Ward 151</name>
-        <styleUrl>#style2</styleUrl>
+        <styleUrl>#style1</styleUrl>
         <ExtendedData>
             <Data name="@id">
                 <value>relation/7888812</value>
