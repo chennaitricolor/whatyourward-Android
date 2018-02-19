@@ -631,7 +631,7 @@
         </Polygon>
     </Placemark>
     <Placemark>
-        <name>Ward194</name>
+        <name>Ward 194</name>
         <styleUrl>#style4</styleUrl>
         <ExtendedData>
             <Data name="@id">
@@ -644,7 +644,7 @@
                 <value>administrative</value>
             </Data>
             <Data name="name">
-                <value>Ward194</value>
+                <value>Ward 194</value>
             </Data>
             <Data name="type">
                 <value>boundary</value>
@@ -8414,7 +8414,7 @@
         </Polygon>
     </Placemark>
     <Placemark>
-        <name>Ward 152</name>
+        <name>Ward 151</name>
         <styleUrl>#style2</styleUrl>
         <ExtendedData>
             <Data name="@id">
@@ -8427,7 +8427,7 @@
                 <value>administrative</value>
             </Data>
             <Data name="name">
-                <value>Ward 152</value>
+                <value>Ward 151</value>
             </Data>
             <Data name="type">
                 <value>boundary</value>
